@@ -1,0 +1,51 @@
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.quantity-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.quantity-btn.decrement {
+  background-color: #03a9f4; /* Sky blue */
+  color: white;
+}
+
+.quantity-btn.decrement:hover {
+  background-color: #0288d1; /* Deeper blue on hover */
+}
+
+.quantity-btn.increment {
+  background-color: #03a9f4; /* Sky blue */
+  color: white;
+}
+
+.quantity-btn.increment:hover {
+  background-color: #0288d1; /* Deeper blue on hover */
+}
+
+.quantity-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-display {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+  color: #333;
+}
